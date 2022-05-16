@@ -88,16 +88,21 @@ html,body{
   margin-top: 12px;
 }
 
- &__copyright {
-    font-size: 0.8125rem;
-    color: $grayishBlue;
-
-    @include breakpoint-up(large) {
-      grid-area: copyright;
-      align-self: end;
-      justify-self: end;
+ footer {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        background-color: #333333;
     }
-  }
+
+    p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 0.7em;
+        text-align: center;
+        bottom:0;
 
   .bottom {
     margin-top: 4rem;
