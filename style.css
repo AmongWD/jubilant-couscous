@@ -20,12 +20,6 @@ html,body{
   width: 100%;
 }
 
-#background{
-  width: auto;  
-  text-align: center;  
-  padding: 15px;  
-  border: 3px solid red; 
-}
 
 /*img{
 max-width: 100%;  
@@ -59,10 +53,28 @@ height: auto;
   justify-content: center;
   align-items: center;
   background: #E7EED1;
-  height: 170px;
+  height: 200px;
   position: relative;
   border-radius: 12px 12px 0 0;
 }
+
+#logo{
+margin-bottom:20px;
+justify-content: center;
+margin-right: auto;
+margin-left: auto;
+}
+
+phone{
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  
+}
+
 .wrapper .top::before{
   position: absolute;
   content: "";
@@ -80,47 +92,69 @@ height: auto;
 .wrapper .top {
   font-size: 100px;
   color: rgb(254, 250, 144);
+
 }
 
 .wrapper .bottom{
   padding: 30px;
   word-spacing: 7px;
 }
-.wrapper .bottom .info{
-  font-size: 20px;
+
+.wrapper .bottom .calling-text{
+  font-size: 40px;
   font-weight: 700;
   word-wrap: break-word;
+  margin-bottom: 40px;
+
 }
 
-.wrapper .mc-field-group{
+#mce-EMAIL{
   height: 100%;
   width: 100%;
   padding-left: 14px;
-  outline: none;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
   font-size: 20px;
-  border-radius: 25px;
   transition: all 0.4s ease;
 }
-.wrapper .bottom .input-box{
+
+#mce-FNAME{
+  height: 100%;
+  width: 100%;
+  padding-left: 14px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 14px;
+  font-size: 20px;
+  font-size: 20px;
+  transition: all 0.4s ease;
+  margin-top: 25px;
+}
+
+/*.wrapper .bottom .input-box{
   height: 45px;
   margin: 15px 0 10px 0;
-}
+  border-radius: 25px;
+}*/
+
 .wrapper form .input-box input{
   height: 100%;
   width: 100%;
   padding-left: 14px;
   outline: none;
-  font-size: 30px;
+  font-size: 50px;
   border-radius: 25px;
   transition: all 0.4s ease;
 
 }
-.wrapper .bottom input[type="text"]{
-  border: 4px solid #ccc;
+
+.wrapper .bottom input[type="email"]:focus{
+  border-radius: 25px;
+
 }
-.wrapper .bottom input[type="text"]:focus,
-.wrapper .bottom input[type="text"]:valid{
-  border-color: #39ab43;
+.wrapper .bottom input[type="text"]:focus{
+  border-radius: 25px;
 }
 .wrapper .bottom input[type="submit"]{
   border-radius: 25px;
@@ -128,10 +162,24 @@ height: auto;
   cursor: pointer;
   background: #ff9100;
   color: #fff;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
+  padding-left: 20vh;
+  word-wrap:break-word;
+  
 }
-.wrapper .bottom input[type="submit"]:hover{
-  background: #39ab43;
+#mc-embedded-subscribe[type="submit"]:hover{
+  background: #E7EED1;
+  border-radius: 25px;
+}
+
+#mc-embedded-subscribe{
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  height:40px;
+  width:200px;
+  margin-top: 60px;
 }
 
 /*.wrapper .bottom .footer{
@@ -156,15 +204,13 @@ left: 0;
 }*/
 
 #footer {
-  position:absolute;
+  font-size: 40px;
+  position: absolute;
   justify-content: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  bottom:0;
+  margin-bottom:50px;
   width:100%;
-  height:60px;   /* Height of the footer */
-  background:#fff;
+  margin-top:50px;
 }
 
 /*footer {
